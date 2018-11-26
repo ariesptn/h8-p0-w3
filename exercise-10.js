@@ -1,5 +1,5 @@
 function perkalianUnik(arr) {
-    var result = [];
+    var results = [];
     for (var i = 0; i < arr.length; i++) {
         var hasilPerkalian = 1;
         for (var j = 0; j < arr.length; j++) {
@@ -7,9 +7,9 @@ function perkalianUnik(arr) {
                 hasilPerkalian = hasilPerkalian * arr[j];
             }
         }
-        result[i] = hasilPerkalian;
+        results[i] = hasilPerkalian;
     }
-    return result;
+    return results;
 }
 
 // TEST CASES

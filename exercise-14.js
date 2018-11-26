@@ -1,17 +1,17 @@
 function mengelompokkanAngka(arr) {
-    let genap = [];
-    let ganjil = [];
-    let kelipatan3 = [];
+    let evenNumbers = [];
+    let oddNumbers = [];
+    let multipleOf3s = [];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 3 === 0) {
-            kelipatan3.push(arr[i]);
+            multipleOf3s.push(arr[i]);
         } else if (arr[i] % 2 !== 0) {
-            ganjil.push(arr[i]);
+            oddNumbers.push(arr[i]);
         } else {
-            genap.push(arr[i]);
+            evenNumbers.push(arr[i]);
         }
     }
-    return [genap, ganjil, kelipatan3];
+    return [evenNumbers, oddNumbers, multipleOf3s];
 }
 
 // TEST CASES

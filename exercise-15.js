@@ -1,19 +1,19 @@
 function groupAnimals(animals) {
-    let abjad = 'abcdefghijklmnopqrstuvwxyz';
-    let hasil = [];
-    for (let i = 0; i < abjad.length; i++) {
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    let results = [];
+    for (let i = 0; i < alphabet.length; i++) {
         let pushed = false;
         for (let j = 0; j < animals.length; j++) {
-            if (abjad[i] === animals[j][0]) {
+            if (alphabet[i] === animals[j][0]) {
                 if (!pushed) {
-                    hasil.push([]);
+                    results.push([]);
                     pushed = true;
                 }
-                hasil[hasil.length - 1].push(animals[j]);
+                results[results.length - 1].push(animals[j]);
             }
         }
     }
-    return hasil;
+    return results;
 }
 
 // TEST CASES
