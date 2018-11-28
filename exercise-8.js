@@ -1,8 +1,8 @@
 function pasanganTerbesar(num) {
     var max = 0;
-    numString = num.toString();
+    var numString = num.toString();
     for (var i = 0; i < numString.length - 1; i++) {
-        currentIteration = parseInt(numString.substring(i, i + 2));
+        var currentIteration = parseInt(numString.substring(i, i + 2));
         if (max < currentIteration) {
             max = currentIteration;
         }
